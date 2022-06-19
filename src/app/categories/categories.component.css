@@ -1,0 +1,79 @@
+
+ .container-fluid{
+    text-align: center;
+    
+}
+
+h1{
+    font-weight: bold;
+}
+
+h5{
+    font-weight: bolder;
+    text-align: center;   
+} 
+
+#img-rounded img{
+    border-radius: 80%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    height: 600px;
+    
+  }
+  
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    /* padding: 10px; */
+  }
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* The expanding image container */
+  
+ 
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.9;
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  
+  
+  /* The expanding image container */
+  .container-fluid {
+    position: relative;
+    display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container-fluid a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
